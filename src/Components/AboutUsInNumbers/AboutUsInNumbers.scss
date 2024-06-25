@@ -1,0 +1,43 @@
+@import "../../style/vars";
+.aboutUsInNumbers {
+  padding: 67px 123px 76px 97px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  .aboutUsInNumbers-title {
+    margin-left: 16px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 40px;
+    color: $greyBold;
+  }
+  .aboutUsInNumbers-glavitem {
+    padding: 35px 127px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    border-radius: 30px;
+    .aboutUsInNumbers-subitem {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0px;
+      align-items: center;
+      .subitem-title {
+        color: $pearl;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 87.17px;
+      }
+      .subitem-description {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 29.96px;
+        color: $pearl;
+      }
+    }
+  }
+}

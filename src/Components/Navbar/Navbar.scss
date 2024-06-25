@@ -1,0 +1,38 @@
+// font-family: "Noto Sans", sans-serif;
+// font-family: "Inter", sans-serif;
+@import "../../style/vars";
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0px 0px 20px 20px;
+
+  .navbar-logo {
+    img {
+      width: 287px;
+      height: 64px;
+    }
+  }
+  .navbar__menu {
+    ul {
+      display: flex;
+      align-items: center;
+      column-gap: 80px;
+      .navbar__menu-link {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27.24px;
+        position: relative;
+        color: $white;
+        text-decoration: none;
+      }
+      .active {
+        padding-bottom: 9px;
+        border-bottom: 2px solid rgba(198, 159, 118, 1);
+      }
+    }
+  }
+}

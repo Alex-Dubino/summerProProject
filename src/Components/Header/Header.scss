@@ -1,0 +1,67 @@
+// font-family: "Noto Sans", sans-serif;
+// font-family: "Inter", sans-serif;
+@import "../../style/vars";
+.header {
+  background-image: url(../../../public/header_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 640px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .form {
+    padding: 16px 20px 22px 28px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    background: rgba(1, 36, 42, 0.5);
+    width: auto;
+    .form-group {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      row-gap: 8px;
+      label {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $white;
+      }
+      .input {
+        width: 168px;
+        text-align: center;
+        height: 60px;
+        background-color: $white;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        ::placeholder {
+          font-family: "Noto Sans", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+          color: $pearl;
+        }
+      }
+      .input-adult {
+        width: 258px;
+        padding: 15px 30px;
+      }
+    }
+    .submit-btn {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 27.24px;
+      color: $white;
+      background: #026070;
+      border-radius: 18px;
+      padding: 16px 25px;
+      border: none;
+    }
+  }
+}

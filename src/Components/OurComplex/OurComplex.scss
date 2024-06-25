@@ -1,0 +1,37 @@
+@import "../../style/vars";
+.complex {
+  padding: 111px 111px 151px 124px;
+  position: relative;
+  .complex-description {
+    max-width: 754px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 0;
+    .complex-title {
+      color: $greyBold;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+    .complex-subtitle {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 29.96px;
+      color: $grey;
+    }
+    .complex-subtitle1 {
+      margin-bottom: 30px;
+    }
+  }
+  .complex-img {
+    position: absolute;
+    width: 502px;
+    height: 813px;
+    bottom: 0;
+    right: 0;
+  }
+}

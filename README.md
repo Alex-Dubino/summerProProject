@@ -1,8 +1,21 @@
-# React + Vite
+Список страниц
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Гостиница
+   -- Форма где надо указать Заезд, выезд, количество жителей в номере
+   -- слайдер с Открытый бассейн, Кафе и кальянная, Десткая площадка
+   -- каталог номеров возможность забронировать номер =>
+   -- описание того что хотят забронировать
+   -- форма с 3 инпутами: ФИО, дата рождения, электронный адрес =>
+   -- онлайн оплата(3 инпута Номер карты, Срок действия, CVC) =>
+   -- оплата прошла успешно(описание номера который забронировали )
+   -- О нас в цифрах
+2. Спа
+   -- слайдер выбора спа-комплекса
+   -- форма оставить заявку(2 инпута : имя и номер телефона)
+   -- слайдер Команда профессионалов
+3. Мероприятия
+   -- Меню банкетной зоны
+   -- возможность заполнить форму обратной связи
+4. Контакты  
+   -- контакты
+   -- аккардион с активными вакансиями
