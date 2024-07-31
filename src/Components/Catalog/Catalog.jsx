@@ -1,6 +1,6 @@
 import "./Catalog.scss";
 import { v4 as uuidv4 } from "uuid";
-import cards from "../../dt.json";
+import cards from "../../dt/dt.json";
 export default function Catalog() {
   return (
     <div className="catalog">
