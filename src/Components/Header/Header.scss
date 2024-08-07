@@ -129,15 +129,18 @@
       }
     }
     .submit-btn {
-      font-family: "Noto Sans", sans-serif;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 27.24px;
-      color: $white;
       background: #026070;
       border-radius: 18px;
       padding: 16px 25px;
       border: none;
+      .submit-btn-link {
+        text-decoration: none;
+        color: $white;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 27.24px;
+      }
     }
   }
 }

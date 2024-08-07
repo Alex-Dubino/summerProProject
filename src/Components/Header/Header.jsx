@@ -1,6 +1,7 @@
 import Navbar from "../Navbar/Navbar";
+import { Link, useParams } from "react-router-dom";
 import dayjs from "dayjs";
-import React, { useState } from "react";
+import { useState } from "react";
 import { DatePicker } from "antd";
 import "./Header.scss";
 
@@ -50,8 +51,6 @@ export default function Header() {
           <label htmlFor="adults">Гости</label>
 
           <div className="booking-form">
-            
-
             {isGuestsModalOpen && (
               <div className="guests-modal open">
                 <div className="modal-content">
@@ -116,7 +115,9 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <button className="submit-btn">Найти номер</button>
+        <button className="submit-btn">
+          <Link className="submit-btn-link" to="/rooms">Найти номер</Link>
+        </button>
       </form>
     </div>
   );

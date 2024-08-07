@@ -2,6 +2,10 @@ import "./Catalog.scss";
 import { v4 as uuidv4 } from "uuid";
 import cards from "../../dt/dt.json";
 export default function Catalog() {
+  const handleBookingClick = (item) => {
+    localStorage.setItem("selectedCard", JSON.stringify(item));
+    console.log("Данные карточки сохранены в localStorage:", item);
+  };
   return (
     <div className="catalog">
       <div className="catalog-head">
@@ -34,7 +38,10 @@ export default function Catalog() {
                   <span>{item.price}</span>
                   за ночь
                 </p>
-                <div className="booking-btn">
+                <div
+                  className="booking-btn"
+                  onClick={() => handleBookingClick(item)}
+                >
                   <a href="#">Забронировать </a>
                 </div>
               </div>
