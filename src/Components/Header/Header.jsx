@@ -29,7 +29,9 @@ export default function Header() {
   const dateFormatList = ["DD.MM.YYYY"];
   return (
     <div className="header">
-      <Navbar />
+      <div className="main_hero">
+        <Navbar />
+      </div>
       <form className="form">
         <div className="form-group">
           <label>Заезд</label>
@@ -116,7 +118,9 @@ export default function Header() {
           </div>
         </div>
         <button className="submit-btn">
-          <Link className="submit-btn-link" to="/rooms">Найти номер</Link>
+          <Link className="submit-btn-link" to="/rooms">
+            Найти номер
+          </Link>
         </button>
       </form>
     </div>

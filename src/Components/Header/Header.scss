@@ -10,6 +10,19 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  position: relative;
+  .main_hero {
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.5);
+      .navbar__menu {
+        ul {
+          .navbar__menu-link:nth-child(1) {
+            border-bottom: 2px solid rgba(198, 159, 118, 1);
+          }
+        }
+      }
+    }
+  }
   .form {
     padding: 16px 20px 22px 28px;
     display: flex;

@@ -13,26 +13,21 @@ export default function Navbar() {
       </div>
       <div className="navbar__menu">
         <ul>
-          <li>
-            <Link to="/" className="navbar__menu-link active">
-              Гостиница
-            </Link>
-          </li>
-          <li>
-            <Link to="/spa" className="navbar__menu-link">
-              Спа
-            </Link>
-          </li>
-          <li>
-            <Link to="/activities" className="navbar__menu-link">
-              Мероприятия
-            </Link>
-          </li>
-          <li>
-            <Link to="/contacts" className="navbar__menu-link">
-              Контакты
-            </Link>
-          </li>
+          <Link to="/" className="navbar__menu-link ">
+            Гостиница
+          </Link>
+
+          <Link to="/spa" className="navbar__menu-link">
+            Спа
+          </Link>
+
+          <Link to="/activities" className="navbar__menu-link">
+            Мероприятия
+          </Link>
+
+          <Link to="/contacts" className="navbar__menu-link">
+            Контакты
+          </Link>
         </ul>
       </div>
       <div

@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background: rgba(0, 0, 0, 0.5);
+  background: $darkPearl;
   backdrop-filter: blur(10px);
   overflow: hidden;
   .navbar-logo {
@@ -23,29 +23,27 @@
     }
   }
   .burger-active {
-
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      cursor: pointer;
-      top: 50px;
-      right: 20px;
-      width: 30px;
-      height: 30px;
-      span {
-        border: 1px solid $white;
-        width: 24px;
-        height: 1px;
-      }
-      span:nth-child(1) {
-        transform: rotate(-45deg);
-      }
-      span:nth-child(2) {
-        transform: rotate(-135deg);
-      }
-    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    top: 50px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    span {
+      border: 1px solid $white;
+      width: 24px;
+      height: 1px;
+    }
+    span:nth-child(1) {
+      transform: rotate(-45deg);
+    }
+    span:nth-child(2) {
+      transform: rotate(-135deg);
+    }
   }
   .navbar__menu {
     ul {
@@ -68,7 +66,7 @@
 }
 .navbar {
   position: relative;
-  background: rgba(0, 0, 0, 0.5);
+  background: $darkPearl;
   backdrop-filter: blur(5px);
   padding: 20px 74px;
   display: flex;
@@ -119,10 +117,6 @@
         position: relative;
         color: $white;
         text-decoration: none;
-      }
-      .active {
-        padding-bottom: 9px;
-        border-bottom: 2px solid rgba(198, 159, 118, 1);
       }
       @media (max-width: 1000px) {
         display: none;

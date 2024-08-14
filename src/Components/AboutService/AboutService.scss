@@ -6,6 +6,9 @@
   background-size: cover;
   height: 661px;
   position: relative;
+  @media (max-width: 700px) {
+   height: 400px;
+  }
   .service-glavitem {
     position: absolute;
     width: 621px;
@@ -17,6 +20,17 @@
     padding: 60px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1000px) {
+      left: 30px;
+    }
+    @media (max-width: 700px) {
+      padding: 20px;
+      height: auto;
+      width: auto;
+    }
+    @media(max-width:500px){
+      left: 20px;
+    }
     .service-subtitle {
       color: $grey;
       font-family: "Inter", sans-serif;
@@ -24,6 +38,10 @@
       font-weight: 500;
       line-height: 29.05px;
       margin-bottom: 11px;
+      @media (max-width: 700px) {
+        margin-bottom: 0px;
+        font-size: 15px;
+      }
     }
     .service-title {
       color: $greyBold;
@@ -32,19 +50,33 @@
       font-weight: 600;
       line-height: 38.73px;
       margin-bottom: 23px;
+      @media (max-width: 700px) {
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
     }
     .service-description {
       display: flex;
       flex-direction: column;
       row-gap: 23px;
+      @media (max-width: 700px) {
+        row-gap: 0px;
+      }
       .service-description-item {
         display: flex;
         align-items: center;
         column-gap: 16px;
         padding: 16px 0;
+        @media (max-width: 700px) {
+         padding: 8px 0;
+        }
         img {
           width: 60px;
           height: 60px;
+          @media (max-width: 700px) {
+            width: 32px;
+            height: 32px;
+           }
         }
         span {
           font-family: "Noto Sans", sans-serif;
@@ -52,6 +84,9 @@
           font-weight: 400;
           line-height: 29.96px;
           color: $lightGrey;
+          @media(max-width:700px) {
+            font-size: 15px;
+          }
         }
       }
     }
