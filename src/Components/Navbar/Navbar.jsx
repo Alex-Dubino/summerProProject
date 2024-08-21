@@ -17,10 +17,6 @@ export default function Navbar() {
             Гостиница
           </Link>
 
-          <Link to="/spa" className="navbar__menu-link">
-            Спа
-          </Link>
-
           <Link to="/activities" className="navbar__menu-link">
             Мероприятия
           </Link>

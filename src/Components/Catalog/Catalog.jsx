@@ -1,10 +1,13 @@
 import "./Catalog.scss";
 import { v4 as uuidv4 } from "uuid";
+import { useNavigate } from "react-router-dom";
 import cards from "../../dt/dt.json";
 export default function Catalog() {
+  const navigate = useNavigate();
+
   const handleBookingClick = (item) => {
     localStorage.setItem("selectedCard", JSON.stringify(item));
-    console.log("Данные карточки сохранены в localStorage:", item);
+    navigate("/booking");
   };
   return (
     <div className="catalog">
