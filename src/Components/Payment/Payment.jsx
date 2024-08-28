@@ -1,68 +1,3 @@
-// import "./Payment.scss";
-// import { useNavigate, useLocation } from "react-router-dom";
-// export default function Payment() {
-//   const navigates = useNavigate();
-//   const location = useLocation();
-//   const { allCount } = location.state;
-//   const handlePayment = () => {
-//     navigates("/booking");
-//   };
-
-//   const handlePaymentClick = () => {
-//     navigates("/paymentsucsful");
-//   };
-
-//   return (
-//     <div className="payment-page">
-//       <div className="payment-btn-back">
-//         <button className="payment-btn" onClick={handlePayment}>
-//           <img src="../../../public/arrow-left.svg" alt="#" />
-//         </button>
-//       </div>
-//       <div className="payment-page-glavitem">
-//         <div className="payment-page__leftitem">
-//           <div className="payment-page__leftitem-title">
-//             <h2>Онлайн-оплата</h2>
-//             <img src="../../../public/payment-card.svg" alt="#" />
-//           </div>
-
-//           <form className="payment-page__leftitem-form">
-//             <div className="payment-page__leftitem-form__item glavitem">
-//               <label>Номер карты:</label>
-//               <input type="number" />
-//             </div>
-//             <div className="subblock">
-//               <div className="payment-page__leftitem-form__item subitem1">
-//                 <label>Срок действия</label>
-//                 <input type="number" />
-//               </div>
-//               <div className="payment-page__leftitem-form__item subitem2">
-//                 <label>CVC:</label>
-//                 <input type="number" />
-//               </div>
-//             </div>
-//           </form>
-//           <div
-//             className="payment-page__leftitem-btn"
-//             onClick={() => handlePaymentClick()}
-//           >
-//             <button>
-//               <span>Оплатить бронь на {allCount} р </span>
-//             </button>
-//           </div>
-//         </div>
-//         <div className="payment-page__rightitem">
-//           <img src="../../../public/payment-method.svg" alt="#" />
-//           <span>
-//             Платеж безопасен. Мы не храним данные карт, все операции проводит
-//             BePaid - платежная система, серфицированная по международному
-//             стандарту безопастности PCI DSS.
-//           </span>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Payment.scss";
 import { useState, useEffect } from "react";
@@ -98,11 +33,9 @@ export default function Payment() {
       </div>
     );
   }
-
   const handlePayment = () => {
     navigate("/booking");
   };
-
   const handlePaymentClick = () => {
     if (!isFormValid) {
       setShowModal(true);

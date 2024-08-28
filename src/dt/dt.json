@@ -1,8 +1,11 @@
 [
   {
-    "img": "../public/catalog1.png",
+    "img1": "../../public/apartament4.1.jpg",
+    "img2": "../../public/apartament4.2.jpg",
+    "img3": "../../public/apartament4.3.jpg",
+    "img4": "../../public/apartament4.4.jpg",
     "title": "Стандарт ",
-    "price": "от  80 руб",
+    "price": "от  70 руб",
     "area": "15 м2",
     "description": "Просторный и роскошный номер, идеально подходящий для тех, кто ищет элегантность и комфорт.",
     "furniture": [
@@ -17,7 +20,10 @@
     "feedback": "141 отзыв"
   },
   {
-    "img": "../public/catalog2.png",
+    "img1": "../../public/apartament1.1.jpg",
+    "img2": "../../public/apartament1.2.jpg",
+    "img3": "../../public/apartament1.3.jpg",
+    "img4": "../../public/apartament1.4.jpg",
     "title": "Супериор с одной двуспальной кроватью  ",
     "price": "от  100 руб",
     "area": "20 м2",
@@ -32,7 +38,10 @@
     "feedback": "21 отзыв"
   },
   {
-    "img": "../public/catalog3.png",
+    "img1": "../../public/apartament3.1.jpg",
+    "img2": "../../public/apartament3.2.jpg",
+    "img3": "../../public/apartament3.3.jpg",
+    "img4": "../../public/apartament3.4.jpg",
     "title": "Супериор с двумя раздельными кроватями   ",
     "price": "от 120 руб",
     "area": "18 м2",
@@ -47,9 +56,12 @@
     "feedback": "321 отзыв"
   },
   {
-    "img": "../public/catalog4.png",
+    "img1": "../../public/apartament2.1.jpg",
+    "img2": "../../public/apartament2.2.jpg",
+    "img3": "../../public/apartament2.3.jpg",
+    "img4": "../../public/apartament2.4.jpg",
     "title": "Двухместный номер Бизнес  ",
-    "price": "от 150 руб",
+    "price": "от 320 руб",
     "cost": 150,
     "area": "25 м2",
     "description": "Этот номер идеально подходит для семейного отдыха. ",

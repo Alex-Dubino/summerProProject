@@ -2,6 +2,8 @@ import "./Catalog.scss";
 import { v4 as uuidv4 } from "uuid";
 import { useNavigate } from "react-router-dom";
 import cards from "../../dt/dt.json";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 export default function Catalog() {
   const navigate = useNavigate();
 
@@ -24,7 +26,24 @@ export default function Catalog() {
         {cards.map((item) => (
           <div className="card__item" key={uuidv4()}>
             <div className="card__item-img">
-              <img src={item.img} alt="#" />
+              <Swiper
+                pagination={true}
+                modules={[Pagination]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <img src={item.img1} alt="#" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={item.img2} alt="#" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={item.img3} alt="#" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={item.img4} alt="#" />
+                </SwiperSlide>
+              </Swiper>
             </div>
             <div className="card__item-right">
               <div className="description">

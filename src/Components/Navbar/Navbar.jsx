@@ -1,11 +1,8 @@
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import { useState } from "react";
 export default function Navbar() {
   const [showAll, setShowAll] = useState("navbar");
-  const foo = useParams();
-  console.log(foo);
-
   return (
     <div className={showAll}>
       <div className="navbar-logo">

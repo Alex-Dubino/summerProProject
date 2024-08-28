@@ -130,7 +130,7 @@ export default function PaymentSuccessful() {
           <div className="container__rightitem">
             <div className="container__rightitem-description-room">
               <div className="booking-img">
-                <img src={selectedCard.img} alt={selectedCard.title} />
+                <img src={selectedCard.img1} alt={selectedCard.title} />
               </div>
               <div className="booking-description-room">
                 <span>{selectedCard.title}</span>

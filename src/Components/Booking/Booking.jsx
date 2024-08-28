@@ -1,5 +1,4 @@
-import "./Booking.scss";
-import axios from "axios";
+import "./Booking.scss"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { DatePicker, Space } from "antd";
@@ -68,7 +67,6 @@ export default function Booking() {
   const [isFormValid, setIsFormValid] = useState(false);
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
-    // Проверяем, если все поля заполнены, то разблокируем кнопку
     setIsFormValid(
       email.trim() !== "" && name.trim() !== "" && dateOfBirth.trim() !== ""
     );
@@ -116,7 +114,6 @@ export default function Booking() {
                           <div className="date-picker-container">
                             <Space direction="vertical" size={12}>
                               <RangePicker
-                                // value={dateRange}
                                 onChange={handleDateChange}
                                 format="YYYY-MM-DD"
                                 className="date-picker"
@@ -297,7 +294,7 @@ export default function Booking() {
           <div className="container__rightitem">
             <div className="container__rightitem-description-room">
               <div className="booking-img">
-                <img src={selectedCard.img} alt={selectedCard.title} />
+                <img src={selectedCard.img1} alt={selectedCard.title} />
               </div>
               <div className="booking-description-room">
                 <span>{selectedCard.title}</span>
